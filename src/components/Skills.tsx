@@ -1,7 +1,6 @@
 import React from "react";
 import {
   FaPython,
-  FaDatabase,
   FaJs,
   FaHtml5,
   FaGitAlt,
