@@ -4,6 +4,33 @@ import { RiTwitterXLine } from "react-icons/ri";
 import { PiMicrosoftOutlookLogoDuotone } from "react-icons/pi";
 import { GrDocumentPdf } from "react-icons/gr";
 
+// Define the SocialLink component
+interface SocialLinkProps {
+  href: string;
+  icon: React.ComponentType;
+  className?: string;
+  download?: string;
+}
+
+const SocialLink: React.FC<SocialLinkProps> = ({
+  href,
+  icon: Icon,
+  className,
+  download,
+}) => {
+  return (
+    <a
+      href={href}
+      target={href.startsWith("mailto:") ? "_self" : "_blank"}
+      rel={href.startsWith("mailto:") ? "" : "noopener noreferrer"}
+      className={`text-2xl sm:text-3xl md:text-4xl lg:text-5xl hover:scale-110 transition-transform ${className}`}
+      download={download}
+    >
+      <Icon />
+    </a>
+  );
+};
+
 export default function About() {
   return (
     <div className="min-h-screen flex flex-col justify-center items-center p-4 sm:p-6 md:p-8 lg:p-12">
@@ -32,6 +59,7 @@ export default function About() {
             <SocialLink
               href="https://github.com/akileshjayakumar"
               icon={FaGithub}
+              className="text-gray-800"
             />
             <SocialLink
               href="https://x.com/StrangeDoctorGo"
@@ -41,42 +69,17 @@ export default function About() {
             <SocialLink
               href="mailto:jayakuma006@mymail.sim.edu.sg"
               icon={PiMicrosoftOutlookLogoDuotone}
+              className="text-blue-400"
             />
             <SocialLink
               href="/pdf/AkileshJayakumarResume.pdf"
               icon={GrDocumentPdf}
-              className="text-blue-600"
+              className="text-red-600"
               download="AkileshJayakumarResume.pdf"
             />
           </div>
         </motion.div>
       </div>
     </div>
-  );
-}
-
-interface SocialLinkProps {
-  href: string;
-  icon: React.ComponentType<{ className?: string }>;
-  className?: string;
-  [key: string]: any;
-}
-
-function SocialLink({
-  href,
-  icon: Icon,
-  className = "",
-  ...props
-}: SocialLinkProps) {
-  return (
-    <a
-      href={href}
-      target="_blank"
-      rel="noopener noreferrer"
-      className="transition-transform hover:scale-110"
-      {...props}
-    >
-      <Icon className={`text-3xl sm:text-4xl md:text-5xl ${className}`} />
-    </a>
   );
 }

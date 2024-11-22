@@ -1,11 +1,5 @@
 import React from "react";
-import {
-  FaPython,
-  FaJs,
-  FaHtml5,
-  FaGitAlt,
-  FaDocker,
-} from "react-icons/fa";
+import { FaPython, FaJs, FaHtml5, FaGitAlt, FaDocker } from "react-icons/fa";
 import {
   SiTypescript,
   SiNextdotjs,
