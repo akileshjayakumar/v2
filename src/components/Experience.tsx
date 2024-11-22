@@ -158,7 +158,7 @@ const projects = [
     tech: ["NextJS", "TypeScript", "TailwindCSS", "Vercel"],
     links: {
       github: "https://github.com/akileshjayakumar/Next.js-SDK-Chatbot",
-      demo: "https://www.google.com/search?q=error+404&rlz=1C5MACD_enSG1126SG1127&oq=error+404&gs_lcrp=EgZjaHJvbWUyDAgAEEUYORixAxiABDIHCAEQABiABDIHCAIQABiABDIHCAMQABiABDIHCAQQABiABDIHCAUQABiABDIHCAYQABiABDIHCAcQABiABDIHCAgQABiABDIHCAkQABiABNIBCDIzNzlqMGo3qAIAsAIA&sourceid=chrome&ie=UTF-8",
+      demo: "https://nextjs-sdk-chatbot.vercel.app/",
     },
   },
 ];
