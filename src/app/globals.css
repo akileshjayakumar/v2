@@ -1,21 +1,102 @@
+@import url('https://fonts.googleapis.com/css2?family=VT323&display=swap');
+
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
 
-:root {
-  --background: #ffffff;
-  --foreground: #171717;
+body {
+  margin: 0;
+  background: #000000;
+  color: #ffffff;
+  font-family: 'VT323', monospace;
 }
 
-@media (prefers-color-scheme: dark) {
-  :root {
-    --background: #0a0a0a;
-    --foreground: #ededed;
+html {
+  scroll-behavior: smooth;
+}
+
+/* Bokeh effect */
+.bokeh {
+  position: absolute;
+  border-radius: 50%;
+  filter: blur(60px);
+  opacity: 0.5;
+  mix-blend-mode: screen;
+}
+
+.bokeh-1 {
+  width: 200px;
+  height: 200px;
+  background: radial-gradient(circle at 30% 30%, rgba(255, 255, 255, 0.3), transparent);
+  bottom: -50px;
+  left: 5%;
+  animation: float 8s infinite;
+}
+
+.bokeh-2 {
+  width: 250px;
+  height: 250px;
+  background: radial-gradient(circle at 30% 30%, rgba(255, 255, 255, 0.2), transparent);
+  bottom: -70px;
+  left: 25%;
+  animation: float 10s infinite;
+}
+
+.bokeh-3 {
+  width: 180px;
+  height: 180px;
+  background: radial-gradient(circle at 30% 30%, rgba(255, 255, 255, 0.25), transparent);
+  bottom: -40px;
+  left: 45%;
+  animation: float 9s infinite;
+}
+
+.bokeh-4 {
+  width: 220px;
+  height: 220px;
+  background: radial-gradient(circle at 30% 30%, rgba(255, 255, 255, 0.15), transparent);
+  bottom: -60px;
+  left: 65%;
+  animation: float 11s infinite;
+}
+
+.bokeh-5 {
+  width: 190px;
+  height: 190px;
+  background: radial-gradient(circle at 30% 30%, rgba(255, 255, 255, 0.2), transparent);
+  bottom: -45px;
+  left: 85%;
+  animation: float 8.5s infinite;
+}
+
+@keyframes float {
+  0%, 100% {
+    transform: translateY(0);
+  }
+  50% {
+    transform: translateY(-20px);
   }
 }
 
-body {
-  color: var(--foreground);
-  background: var(--background);
-  font-family: Arial, Helvetica, sans-serif;
+/* Ensure smooth transitions */
+* {
+  transition: all 0.2s ease-in-out;
+}
+
+/* Custom scrollbar */
+::-webkit-scrollbar {
+  width: 10px;
+}
+
+::-webkit-scrollbar-track {
+  background: #1a1a1a;
+}
+
+::-webkit-scrollbar-thumb {
+  background: #ffffff;
+  border-radius: 5px;
+}
+
+::-webkit-scrollbar-thumb:hover {
+  background: #cccccc;
 }
