@@ -57,10 +57,10 @@ export default function Home() {
   };
 
   return (
-    <div className="min-h-screen bg-black text-white font-['VT323',monospace] p-2 sm:p-4 md:p-6 border-2 sm:border-4 border-white">
+    <div className="min-h-screen bg-black text-white font-['VT323',monospace] sm:p-4 md:p-6 border-2 sm:border-4 border-white">
       {/* Navigation */}
-      <nav className="flex flex-col sm:flex-row justify-between items-center px-2 sm:px-4 md:px-6 py-3 sm:py-4 md:py-5 sticky top-0 bg-black z-50 border-b border-white">
-        <div className="flex flex-wrap justify-center sm:justify-start gap-2 sm:gap-4 md:gap-8 text-lg sm:text-xl md:text-2xl lg:text-3xl tracking-[0.1em] sm:tracking-[0.2em] mb-2 sm:mb-0">
+      <nav className="flex flex-col sm:flex-row justify-between items-center sm:px-9 md:px-6 py-[1rem] px-[1rem] sm:py-2 md:py-5 sticky top-0 bg-black z-50 border-b border-cyan-400">
+        <div className="flex flex-wrap justify-center sm:justify-start gap-2 sm:gap-4 md:gap-8 text-lg sm:text-xl md:text-2xl lg:text-3xl tracking-[0.3em] sm:tracking-[0.2em] mb-2 sm:mb-0">
           <button
             onClick={() => scrollToSection(aboutRef)}
             className={`hover:text-red-400 transition-colors duration-300 rounded p-2 sm:p-3 ${
@@ -86,17 +86,7 @@ export default function Home() {
             EXPERIENCE
           </button>
         </div>
-        <div className="flex gap-2 sm:gap-4">
-          <button
-            className="hover:text-red-400 transition-colors duration-300 rounded border-2 p-2 sm:p-3"
-            onClick={toggleFullscreen}
-          >
-            <Maximize2 className="w-4 h-4 sm:w-6 sm:h-6 md:w-8 md:h-8" />
-          </button>
-          <button className="hover:text-red-400 transition-colors duration-300 rounded border-2 p-2 sm:p-3">
-            <X className="w-4 h-4 sm:w-6 sm:h-6 md:w-8 md:h-8" />
-          </button>
-        </div>
+        <div className="flex gap-2"></div>
       </nav>
 
       {/* Main Content */}
@@ -131,15 +121,6 @@ export default function Home() {
           <Footer />
         </section>
       </main>
-
-      {/* Bokeh Effect */}
-      <div className="fixed bottom-0 left-0 right-0 h-48 sm:h-64 md:h-96 pointer-events-none opacity-70">
-        <div className="bokeh bokeh-1" />
-        <div className="bokeh bokeh-2" />
-        <div className="bokeh bokeh-3" />
-        <div className="bokeh bokeh-4" />
-        <div className="bokeh bokeh-5" />
-      </div>
     </div>
   );
 }

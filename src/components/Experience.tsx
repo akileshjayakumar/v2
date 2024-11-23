@@ -69,10 +69,10 @@ const experiences = [
     logo: htxLogo,
     website: "www.htx.gov.sg",
     description: [
-      "Engineered and containerised RAG and RAGAS pipelines with open-source LLMs from HuggingFace.",
+      "Engineered and containerised RAG and RAGAS pipelines with open-source LLMs from HuggingFace",
       "Improved context recall and precision by 90% by integrating the HyDE retriever, enhancing document retrieval relevance.",
       "Refactored system code to enable custom prompts and few-shot learning, delivering more tailored LLM outputs.",
-      "Configured a microservice architecture to containerised and integrate services across the GenAI tech stack.",
+      "Configured a microservice architecture to integrate the microservices across the GenAI stack.",
       "Curated benchmarking datasets by automating YouTube scraping and transcription, supporting STT model training efforts.",
     ],
     tech: [
@@ -93,7 +93,7 @@ const experiences = [
     website: "www.cpf.gov.sg",
     description: [
       "Developed a GenAI application to analyse employee comments, posts, and reviews, delivering sentiment insights for HR.",
-      "Researched and fine-tuned GPT models, optimising context window sizes to enhance sentiment analysis accuracy.",
+      "Researched and fine-tuned prompt templates with GPT models to enhance sentiment analysis accuracy.",
       "Automated test case generation using zero-shot and few-shot prompting techniques to evaluate sentiment analysis.",
       "Automated report generation for HR, providing quick access to key metrics and trends.",
     ],
@@ -131,8 +131,10 @@ const projects = [
   {
     name: "NES Catalyst X Hackathon 2024",
     date: "Oct 2024",
-    description:
+    description: [
       "Our team pitched and showcased a GenAI tutoring application that supports dyslexic students with context-rich explanations.",
+      "Allows multimodal inputs and incorporates TTS, STT & STS functionalities to enhance accessibility and learning support.",
+    ],
     tech: ["Python", "Streamlit", "OpenAI", "PyTorch", "CUDA"],
     links: {
       github: "https://github.com/akileshjayakumar/CatalystX-2024",
@@ -154,7 +156,7 @@ const projects = [
     name: "Next.js LLM Chatbot",
     date: "Apr 2024",
     description:
-      "Created a ChatGPT-style chatbot to explore and experiment with Vercel's AI SDK.",
+      "Created a ChatGPT-style chatbot to explore and experiment with Vercel AI SDK.",
     tech: ["NextJS", "TypeScript", "TailwindCSS", "Vercel"],
     links: {
       github: "https://github.com/akileshjayakumar/Next.js-SDK-Chatbot",
@@ -200,7 +202,7 @@ export default function Experience() {
           className="w-full max-w-3xl"
         >
           {activeSection === "work" && (
-            <div className="relative">
+            <div className="relative m-[3rem]">
               <div className="absolute left-0 top-0 bottom-0 w-px bg-white" />
               <div className="space-y-16">
                 {experiences.map((exp, index) => (
@@ -212,13 +214,13 @@ export default function Experience() {
                         rel="noopener noreferrer"
                         className="block relative group"
                       >
-                        <div className="w-12 h-12 sm:w-16 sm:h-16 rounded-full border-4 border-white bg-black overflow-hidden transition-transform duration-300 group-hover:scale-110">
+                        <div className="w-12 h-12 sm:w-[6rem] sm:h-[6rem] rounded border-[0.2rem] border-white overflow-hidden transition-transform duration-300 group-hover:scale-110">
                           <Image
                             src={exp.logo}
                             alt={exp.company}
                             width={100}
                             height={100}
-                            className="bg-white object-cover"
+                            className="object-cover bg-white"
                           />
                         </div>
                       </a>
@@ -266,7 +268,7 @@ export default function Experience() {
           )}
 
           {activeSection === "edu" && (
-            <div className="relative">
+            <div className="relative m-[5rem]">
               <div className="absolute left-0 top-0 bottom-0 w-px bg-white" />
               <div className="space-y-16">
                 {education.map((edu, index) => (
@@ -278,7 +280,7 @@ export default function Experience() {
                         rel="noopener noreferrer"
                         className="block relative group"
                       >
-                        <div className="w-12 h-12 sm:w-16 sm:h-16 rounded-full border-4 border-white bg-black overflow-hidden transition-transform duration-300 group-hover:scale-110">
+                        <div className="w-12 h-12 sm:w-[6rem] sm:h-[6rem] rounded-full border-4 border-white bg-black overflow-hidden transition-transform duration-300 group-hover:scale-110">
                           <Image
                             src={edu.logo}
                             alt={edu.institution}
