@@ -54,28 +54,28 @@ export default function About() {
             <SocialLink
               href="https://www.linkedin.com/in/akileshjayakumar/"
               icon={FaLinkedin}
-              className="text-blue-600"
+              className="hover:scale-110 transition-transform text-blue-600"
             />
             <SocialLink
               href="https://github.com/akileshjayakumar"
               icon={FaGithub}
-              className="text-gray-800"
+              className="hover:scale-110 transition-transform"
             />
             <SocialLink
               href="https://x.com/StrangeDoctorGo"
               icon={RiTwitterXLine}
-              className="text-orange-600"
+              className="hover:scale-110 transition-transform text-orange-600"
             />
             <SocialLink
               href="mailto:jayakuma006@mymail.sim.edu.sg"
               icon={PiMicrosoftOutlookLogoDuotone}
-              className="text-blue-400"
+              className="hover:scale-110 transition-transform"
             />
             <SocialLink
-              href="/pdf/AkileshJayakumarResume.pdf"
+              href="/pdf/AkileshJayakumarCV.pdf"
               icon={GrDocumentPdf}
-              className="text-red-600"
-              download="AkileshJayakumarResume.pdf"
+              className="text-[#39d692]"
+              download="AkileshJayakumarCV.pdf"
             />
           </div>
         </motion.div>
