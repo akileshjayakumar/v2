@@ -129,7 +129,7 @@ const education = [
 
 const projects = [
   {
-    name: "NES Catalyst X Hackathon 2024",
+    name: "NES CatalystX Hackathon 2024",
     date: "Oct 2024",
     description: [
       "Our team pitched and showcased a GenAI tutoring application that supports dyslexic students with context-rich explanations.",
