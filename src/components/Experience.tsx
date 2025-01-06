@@ -58,11 +58,8 @@ const experiences = [
 
     tech: [
       "Python",
-      "Streamlit",
       "OpenAI",
       "LangChain",
-      "MicrosoftPA",
-      "Excel",
     ],
   },
 ];
