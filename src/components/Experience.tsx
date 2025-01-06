@@ -4,28 +4,10 @@ import { useState } from "react";
 import Image from "next/image";
 import { motion, AnimatePresence } from "framer-motion";
 import { FaPython, FaDocker, FaGitAlt, FaReact } from "react-icons/fa";
-import {
-  SiTypescript,
-  SiMongodb,
-  SiNeo4J,
-  SiOracle,
-  SiFastapi,
-  SiLangchain,
-  SiRedis,
-  SiPytorch,
-  SiStreamlit,
-  SiOpenai,
-  SiPowerautomate,
-  SiNvidia,
-  SiTailwindcss,
-  SiNodedotjs,
-  SiKoa,
-  SiJavascript,
-  SiFirebase,
-  SiMicrosoftexcel,
-} from "react-icons/si";
+import { SiLangchain, SiRedis, SiPytorch, SiOpenai } from "react-icons/si";
 import { TbBrandNextjs } from "react-icons/tb";
 import { VscAzure } from "react-icons/vsc";
+import { BsNvidia } from "react-icons/bs";
 import { IoLogoVercel } from "react-icons/io5";
 
 import htxLogo from "@/components/logos/htx.png";
@@ -34,31 +16,18 @@ import uowLogo from "@/components/logos/uow.png";
 import simLogo from "@/components/logos/sim.png";
 
 const techIcons = {
+  NvidiaNIM: BsNvidia,
   Python: FaPython,
-  FastAPI: SiFastapi,
   LangChain: SiLangchain,
   Docker: FaDocker,
   Redis: SiRedis,
   PyTorch: SiPytorch,
-  Streamlit: SiStreamlit,
   OpenAI: SiOpenai,
-  MicrosoftPA: SiPowerautomate,
   AzureML: VscAzure,
-  CUDA: SiNvidia,
   NextJS: TbBrandNextjs,
-  TypeScript: SiTypescript,
-  TailwindCSS: SiTailwindcss,
   Vercel: IoLogoVercel,
   Git: FaGitAlt,
-  MongoDB: SiMongodb,
-  Neo4j: SiNeo4J,
-  Oracle: SiOracle,
   React: FaReact,
-  NodeJS: SiNodedotjs,
-  Koa: SiKoa,
-  JavaScript: SiJavascript,
-  Firebase: SiFirebase,
-  Excel: SiMicrosoftexcel,
 } as const;
 
 const experiences = [
@@ -69,21 +38,11 @@ const experiences = [
     logo: htxLogo,
     website: "www.htx.gov.sg",
     description: [
-      "Engineered and containerised RAG and RAGAS pipelines with open-source LLMs from HuggingFace",
-      "Improved context recall and precision by 90% by integrating the HyDE retriever, enhancing document retrieval relevance.",
-      "Refactored system code to enable custom prompts and few-shot learning, delivering more tailored LLM outputs.",
-      "Configured a microservice architecture to integrate the microservices across the GenAI stack.",
-      "Curated benchmarking datasets by automating YouTube scraping and transcription, supporting STT model training efforts.",
+      "Refactored system architecture to enable custom prompts and few-shot learning for more tailored LLM outputs.",
+      "Engineered containerised RAG pipelines with RAGAS evaluation, utilising open-source LLMs from HuggingFace.",
+      "Configured scalable microservices using Docker Compose to integrate and containerise core GenAI components.",
     ],
-    tech: [
-      "Python",
-      "FastAPI",
-      "LangChain",
-      "Docker",
-      "Redis",
-      "PyTorch",
-      "AzureML",
-    ],
+    tech: ["Python", "LangChain", "Docker", "Redis", "PyTorch", "AzureML"],
   },
   {
     company: "Central Provident Fund Board",
@@ -92,19 +51,12 @@ const experiences = [
     logo: cpfLogo,
     website: "www.cpf.gov.sg",
     description: [
-      "Developed a GenAI application to analyse employee comments, posts, and reviews, delivering sentiment insights for HR.",
-      "Researched and fine-tuned prompt templates with GPT models to enhance sentiment analysis accuracy.",
-      "Automated test case generation using zero-shot and few-shot prompting techniques to evaluate sentiment analysis.",
-      "Automated report generation for HR, providing quick access to key metrics and trends.",
+      "Developed a GenAI application to analyse employee comments and reviews, delivering sentiment insights for HR.",
+      "Enhanced sentiment analysis accuracy by researching and fine-tuning prompt templates using GPT models.",
+      "Automated report generation workflows, providing HR with rapid access to key metrics and trends.",
     ],
-    tech: [
-      "Python",
-      "Streamlit",
-      "OpenAI",
-      "LangChain",
-      "MicrosoftPA",
-      "Excel",
-    ],
+
+    tech: ["Python", "OpenAI", "LangChain"],
   },
 ];
 
@@ -112,8 +64,8 @@ const education = [
   {
     institution: "University of Wollongong",
     degree: "Bachelor of Computer Science",
-    specialization: "Big Data and Cyber Security",
-    date: "Oct 2022 - Jun 2026",
+    specialization: "Cyber Security",
+    date: "Oct 2022 - Sep 2025",
     logo: uowLogo,
     website: "www.uow.edu.au",
   },
@@ -135,7 +87,7 @@ const projects = [
       "Our team pitched and showcased a GenAI tutoring application that supports dyslexic students with context-rich explanations.",
       "Allows multimodal inputs and incorporates TTS, STT & STS functionalities to enhance accessibility and learning support.",
     ],
-    tech: ["Python", "Streamlit", "OpenAI", "PyTorch", "CUDA"],
+    tech: ["Python", "OpenAI", "NvidiaNIM"],
     links: {
       github: "https://github.com/akileshjayakumar/CatalystX-2024",
       demo: "https://eduxcatalystx2024.streamlit.app/",
@@ -157,7 +109,7 @@ const projects = [
     date: "Apr 2024",
     description:
       "Created a ChatGPT-style chatbot to explore and experiment with Vercel AI SDK.",
-    tech: ["NextJS", "TypeScript", "TailwindCSS", "Vercel"],
+    tech: ["NextJS", "Vercel", "OpenAI"],
     links: {
       github: "https://github.com/akileshjayakumar/Next.js-SDK-Chatbot",
       demo: "https://nextjs-sdk-chatbot.vercel.app/",
@@ -280,7 +232,7 @@ export default function Experience() {
                         rel="noopener noreferrer"
                         className="block relative group"
                       >
-                        <div className="w-12 h-12 sm:w-[6rem] sm:h-[6rem] rounded-full border-4 border-white bg-black overflow-hidden transition-transform duration-300 group-hover:scale-110">
+                        <div className="w-12 h-12 sm:w-[6rem] bg-white sm:h-[6rem] rounded border-[0.2rem] border-white overflow-hidden transition-transform duration-300 group-hover:scale-110">
                           <Image
                             src={edu.logo}
                             alt={edu.institution}

@@ -72,7 +72,7 @@ export default function About() {
               className="hover:scale-110 transition-transform"
             />
             <SocialLink
-              href="/pdf/AkileshJayakumarCV.pdf"
+              href="/pdf/AkileshJayakumar_CV.pdf"
               icon={GrDocumentPdf}
               className="text-[#39d692]"
               download="AkileshJayakumarCV.pdf"
