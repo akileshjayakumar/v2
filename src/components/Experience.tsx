@@ -7,6 +7,7 @@ import { FaPython, FaDocker, FaGitAlt, FaReact } from "react-icons/fa";
 import { SiLangchain, SiRedis, SiPytorch, SiOpenai } from "react-icons/si";
 import { TbBrandNextjs } from "react-icons/tb";
 import { VscAzure } from "react-icons/vsc";
+import { BsNvidia } from "react-icons/bs";
 import { IoLogoVercel } from "react-icons/io5";
 
 import htxLogo from "@/components/logos/htx.png";
@@ -15,6 +16,7 @@ import uowLogo from "@/components/logos/uow.png";
 import simLogo from "@/components/logos/sim.png";
 
 const techIcons = {
+  NvidiaNIM: BsNvidia,
   Python: FaPython,
   LangChain: SiLangchain,
   Docker: FaDocker,
@@ -92,7 +94,7 @@ const projects = [
       "Our team pitched and showcased a GenAI tutoring application that supports dyslexic students with context-rich explanations.",
       "Allows multimodal inputs and incorporates TTS, STT & STS functionalities to enhance accessibility and learning support.",
     ],
-    tech: ["Python", "OpenAI", "PyTorch", "CUDA"],
+    tech: ["Python", "OpenAI", "NvidiaNIM"],
     links: {
       github: "https://github.com/akileshjayakumar/CatalystX-2024",
       demo: "https://eduxcatalystx2024.streamlit.app/",
@@ -114,7 +116,7 @@ const projects = [
     date: "Apr 2024",
     description:
       "Created a ChatGPT-style chatbot to explore and experiment with Vercel AI SDK.",
-    tech: ["NextJS", "TypeScript", "TailwindCSS", "Vercel"],
+    tech: ["NextJS", "Vercel", "OpenAI"],
     links: {
       github: "https://github.com/akileshjayakumar/Next.js-SDK-Chatbot",
       demo: "https://nextjs-sdk-chatbot.vercel.app/",
