@@ -56,11 +56,7 @@ const experiences = [
       "Automated report generation workflows, providing HR with rapid access to key metrics and trends.",
     ],
 
-    tech: [
-      "Python",
-      "OpenAI",
-      "LangChain",
-    ],
+    tech: ["Python", "OpenAI", "LangChain"],
   },
 ];
 
@@ -236,7 +232,7 @@ export default function Experience() {
                         rel="noopener noreferrer"
                         className="block relative group"
                       >
-                        <div className="w-12 h-12 sm:w-[6rem] sm:h-[6rem] rounded-full border-4 border-white bg-black overflow-hidden transition-transform duration-300 group-hover:scale-110">
+                        <div className="w-12 h-12 sm:w-[6rem] bg-white sm:h-[6rem] rounded border-[0.2rem] border-white overflow-hidden transition-transform duration-300 group-hover:scale-110">
                           <Image
                             src={edu.logo}
                             alt={edu.institution}
