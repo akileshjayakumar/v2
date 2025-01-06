@@ -4,14 +4,7 @@ import { useState } from "react";
 import Image from "next/image";
 import { motion, AnimatePresence } from "framer-motion";
 import { FaPython, FaDocker, FaGitAlt, FaReact } from "react-icons/fa";
-import { FaMicrosoft } from "react-icons/fa";
-import {
-  SiPython,
-  SiLangchain,
-  SiRedis,
-  SiPytorch,
-  SiOpenai
-} from "react-icons/si";
+import { SiLangchain, SiRedis, SiPytorch, SiOpenai } from "react-icons/si";
 import { TbBrandNextjs } from "react-icons/tb";
 import { VscAzure } from "react-icons/vsc";
 import { IoLogoVercel } from "react-icons/io5";
@@ -47,14 +40,7 @@ const experiences = [
       "Engineered containerised RAG pipelines with RAGAS evaluation, utilising open-source LLMs from HuggingFace.",
       "Configured scalable microservices using Docker Compose to integrate and containerise core GenAI components.",
     ],
-    tech: [
-      "Python",
-      "LangChain",
-      "Docker",
-      "Redis",
-      "PyTorch",
-      "AzureML",
-    ],
+    tech: ["Python", "LangChain", "Docker", "Redis", "PyTorch", "AzureML"],
   },
   {
     company: "Central Provident Fund Board",
@@ -65,11 +51,8 @@ const experiences = [
     description: [
       "Developed a GenAI application to analyse employee comments and reviews, delivering sentiment insights for HR.",
       "Enhanced sentiment analysis accuracy by researching and fine-tuning prompt templates using GPT models.",
-      "Automated report generation workflows, providing HR with rapid access to key metrics and trends."
+      "Automated report generation workflows, providing HR with rapid access to key metrics and trends.",
     ],
-
-
-
 
     tech: [
       "Python",
