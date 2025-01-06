@@ -68,8 +68,8 @@ const education = [
   {
     institution: "University of Wollongong",
     degree: "Bachelor of Computer Science",
-    specialization: "Big Data and Cyber Security",
-    date: "Oct 2022 - Jun 2026",
+    specialization: "Cyber Security",
+    date: "Oct 2022 - Sep 2025",
     logo: uowLogo,
     website: "www.uow.edu.au",
   },
