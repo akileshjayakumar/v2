@@ -37,12 +37,11 @@ export default function About() {
       <h2 className="text-3xl sm:text-4xl md:text-5xl lg:text-6xl mb-6 sm:mb-8 md:mb-10 font-['VT323',monospace] tracking-wider">
         ABOUT
       </h2>
-      <div className="max-w-xs sm:max-w-sm md:max-w-2xl lg:max-w-3xl text-center">
-        <p className="text-sm sm:text-base md:text-lg lg:text-xl mb-6 sm:mb-8 md:mb-10 leading-relaxed tracking-wider text-white-400">
-          Hello! I am a Computer Science student at the University of
-          Wollongong, specializing in Big Data and Cyber Security. With a strong
-          passion for software development, I am always eager to learn new
-          technologies and frameworks.
+      <div className="max-w-xs sm:max-w-sm md:max-w-2xl lg:max-w-xl text-center">
+        <p className="text-base sm:text-lg md:text-xl lg:text-2xl mb-6 sm:mb-8 md:mb-10 leading-relaxed tracking-wider text-white-400">
+          Hello! I am a Computer Science student at the University of Wollongong
+          with a strong passion for software development and AI engineering. I
+          am always eager to learn new technologies and frameworks.
         </p>
         <motion.div
           className="flex flex-col items-center justify-center mt-4 sm:mt-6 md:mt-8 lg:mt-10"
