@@ -57,16 +57,17 @@ function Footer() {
           href="https://github.com/akileshjayakumar?tab=repositories"
           target="_blank"
           rel="noopener noreferrer"
-          className="inline-block text-sm sm:text-xl py-3 sm:py-4 px-6 sm:px-9 tracking-wider bg-gradient-to-r from-green-400 to-blue-500 hover:from-cyan-500 hover:to-cyan-600 text-white 
+          className="inline-block text-sm sm:text-4xl py-3 sm:py-4 px-6 sm:px-9 tracking-wider bg-gradient-to-r from-green-400 to-blue-500 hover:from-cyan-500 hover:to-cyan-600 text-white 
           font-bold rounded-full shadow-lg transition duration-300 ease-in-out transform hover:-translate-y-1 hover:scale-110"
         >
           More projects on my GitHub!
         </a>
       </h3>
       <div className="font-bold flex flex-col justify-center items-center space-y-4">
-        <div className="text-sm sm:text-base">built with</div>
+        <div className="text-base sm:text-2xl">built with</div> <br />
         <ToolsUsed />
-        <div className="text-sm sm:text-base">© 2024 Akilesh Jayakumar</div>
+        <br />
+        <div className="text-base sm:text-2xl">© 2025 Akilesh Jayakumar</div>
       </div>
     </footer>
   );
