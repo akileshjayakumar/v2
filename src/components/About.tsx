@@ -10,6 +10,7 @@ interface SocialLinkProps {
   icon: React.ComponentType;
   className?: string;
   download?: string;
+  children?: React.ReactNode;
 }
 
 const SocialLink: React.FC<SocialLinkProps> = ({
