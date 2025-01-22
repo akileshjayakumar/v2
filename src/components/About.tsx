@@ -17,6 +17,7 @@ const SocialLink: React.FC<SocialLinkProps> = ({
   icon: Icon,
   className,
   download,
+  children,
 }) => {
   return (
     <a
@@ -27,6 +28,7 @@ const SocialLink: React.FC<SocialLinkProps> = ({
       download={download}
     >
       <Icon />
+      {children}
     </a>
   );
 };
@@ -72,11 +74,13 @@ export default function About() {
               className="hover:scale-110 transition-transform"
             />
             <SocialLink
-              href="/pdf/AkileshJayakumar_CV.pdf"
+              href="/pdf/AkileshJayakumar_Resume.pdf"
               icon={GrDocumentPdf}
-              className="text-[#39d692]"
-              download="AkileshJayakumarCV.pdf"
-            />
+              className="text-[#ffffff] flex items-center"
+              download="AkileshJayakumar_Resume.pdf"
+            >
+              <span className="ml-6">Resume</span>
+            </SocialLink>
           </div>
         </motion.div>
       </div>
