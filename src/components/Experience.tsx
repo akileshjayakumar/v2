@@ -83,8 +83,9 @@ const projects = [
     name: "NES CatalystX Hackathon 2024",
     date: "Oct 2024",
     description: [
-      "Our team pitched and showcased a GenAI tutoring application that supports dyslexic students with context-rich explanations.",
-      "Allows multimodal inputs and incorporates TTS, STT & STS functionalities to enhance accessibility and learning support.",
+      "Developed a multimodal GenAI tutor with Text-to-Speech (TTS), Speech-to-Text (STT) and Speech-to-Speech (STS) features alongside my team to improve dyslexic accessibility.",
+      "Collaborated with a five-person team on UI design and dyslexia-focused research to deliver a user-centric solution.",
+      "Leveraged Python, LlamaIndex, NVIDIA NIM Microservices, and Streamlit to build and deploy the solution.",
     ],
     tech: ["Python", "OpenAI", "NvidiaNIM"],
     links: {
@@ -95,8 +96,10 @@ const projects = [
   {
     name: "LangGraph Agentic Chatbot",
     date: "Oct 2024",
-    description:
-      "Developed an LLM Agent capable of answering user queries by searching and retrieving real-time information from the web.",
+    description: [
+      "Developed an agentic chatbot capable of retrieving real-time information from the web, enabling users to interact with queries ranging from general knowledge to specific topics like news and media content.",
+      "Utilised Python, Gradio, LangGraph, Tavily, and Hugging Face Spaces to build and deploy the chatbot.",
+    ],
     tech: ["Python", "OpenAI"],
     links: {
       github: "https://github.com/akileshjayakumar/LangGraph-Agentic-Chatbot",
