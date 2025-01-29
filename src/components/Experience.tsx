@@ -38,9 +38,9 @@ const experiences = [
     logo: htxLogo,
     website: "www.htx.gov.sg",
     description: [
-      "Engineered containerised RAG pipelines with the RAGAS evaluation framework using Docker and open-source LLMs from HuggingFace.",
-      "Refactored system architecture to support custom prompts and few-shot examples, enabling more nuanced LLM outputs tailored to specific contexts.",
-      "Configured scalable microservices with Docker Compose, integrating core GenAI components, thus reducing deployment time by 35%.",
+      "Engineered containerised Retrieval-Augmented Generation (RAG) pipelines using Docker, open-source LLMs from Hugging Face, and the RAGAS evaluation framework, optimising pipeline performance and deployment.",
+      "Refactored system architecture and codebase to support custom prompts and few-shot examples, enabling more nuanced and context-aware outputs from LLMs tailored to specific applications.",
+      "Designed and configured scalable microservices with Docker Compose, integrating core Generative AI components and reducing deployment time by 30%.",
     ],
     tech: ["Python", "LangChain", "Docker", "Redis", "PyTorch", "AzureML"],
   },
@@ -51,11 +51,10 @@ const experiences = [
     logo: cpfLogo,
     website: "www.cpf.gov.sg",
     description: [
-      "Developed a GenAI application for sentiment analysis of employee feedback, achieving a 95% accuracy in sentiment classification for over 10,000 comments and reviews.",
-      "Automated engagement reporting, achieving 50% faster delivery of actionable insights for proactive employee feedback management.",
-      "Enhanced sentiment analysis accuracy by researching and fine-tuning prompt templates using GPT models.",
+      "Developed a Generative AI application for sentiment analysis of employee feedback, leveraging LangChain and GPT models to achieve 95% accuracy in classifying over 10,000 comments and reviews.",
+      "Enhanced application performance by researching and fine-tuning prompt templates with GPT models, incorporating zero-shot and few-shot prompting techniques to optimise sentiment analysis accuracy and improve contextual relevance.",
+      "Automated engagement report generation using LangChain, reducing delivery time by 50% and streamlining actionable insights derived from sentiment analysis results.",
     ],
-
     tech: ["Python", "OpenAI", "LangChain"],
   },
 ];
