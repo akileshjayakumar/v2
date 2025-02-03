@@ -34,7 +34,7 @@ const experiences = [
   {
     company: "Home Team Science & Technology Agency",
     position: "AI Engineer Intern",
-    date: "Apr 2024 - Oct 2024",
+    date: "Apr 2024 - Sep 2024",
     logo: htxLogo,
     website: "www.htx.gov.sg",
     description: [
@@ -47,7 +47,7 @@ const experiences = [
   {
     company: "Central Provident Fund Board",
     position: "AI Engineer Intern",
-    date: "Dec 2024 - Apr 2024",
+    date: "Nov 2024 - Apr 2024",
     logo: cpfLogo,
     website: "www.cpf.gov.sg",
     description: [
@@ -109,8 +109,9 @@ const projects = [
   {
     name: "Next.js LLM Chatbot",
     date: "Apr 2024",
-    description:
+    description: [
       "Created a ChatGPT-style chatbot to explore and experiment with Vercel AI SDK.",
+    ],
     tech: ["NextJS", "Vercel", "OpenAI"],
     links: {
       github: "https://github.com/akileshjayakumar/Next.js-SDK-Chatbot",
@@ -264,7 +265,7 @@ export default function Experience() {
           )}
 
           {activeSection === "proj" && (
-            <div className="relative">
+            <div className="relative m-[3rem]">
               <div className="absolute left-0 top-0 bottom-0 w-px bg-white" />
               <div className="space-y-16">
                 {projects.map((project, index) => (
@@ -277,9 +278,17 @@ export default function Experience() {
                         {project.name}
                       </h3>
                       <p className="text-gray-400 font-mono">{project.date}</p>
-                      <p className="text-gray-300 font-mono">
-                        {project.description}
-                      </p>
+                      <ul className="space-y-4 text-gray-300">
+                        {project.description.map((desc, i) => (
+                          <li
+                            key={i}
+                            className="flex items-start font-mono text-sm sm:text-base"
+                          >
+                            <span className="mr-2">•</span>
+                            <span>{desc}</span>
+                          </li>
+                        ))}
+                      </ul>
                       <div className="flex flex-wrap gap-4 mt-4">
                         {project.tech.map((tech) => {
                           const Icon =
