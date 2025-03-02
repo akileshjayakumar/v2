@@ -37,11 +37,7 @@ const experiences = [
     date: "Apr 2024 - Sep 2024",
     logo: htxLogo,
     website: "www.htx.gov.sg",
-    description: [
-      "Engineered containerised Retrieval-Augmented Generation (RAG) pipelines using Docker, open-source LLMs from Hugging Face, and the RAGAS evaluation framework, optimising pipeline performance and deployment.",
-      "Refactored system architecture and codebase to support custom prompts and few-shot examples, enabling more nuanced and context-aware outputs from LLMs tailored to specific applications.",
-      "Designed and configured scalable microservices with Docker Compose, integrating core Generative AI components and reducing deployment time by 30%.",
-    ],
+    description: [],
     tech: ["Python", "LangChain", "Docker", "Redis", "PyTorch", "AzureML"],
   },
   {
@@ -50,11 +46,7 @@ const experiences = [
     date: "Nov 2024 - Apr 2024",
     logo: cpfLogo,
     website: "www.cpf.gov.sg",
-    description: [
-      "Developed a Generative AI application for sentiment analysis of employee feedback, leveraging LangChain and GPT models to achieve 95% accuracy in classifying over 10,000 comments and reviews.",
-      "Enhanced application performance by researching and fine-tuning prompt templates with GPT models, incorporating zero-shot and few-shot prompting techniques to optimise sentiment analysis accuracy and improve contextual relevance.",
-      "Automated engagement report generation using LangChain, reducing delivery time by 50% and streamlining actionable insights derived from sentiment analysis results.",
-    ],
+    description: [],
     tech: ["Python", "OpenAI", "LangChain"],
   },
 ];
@@ -64,7 +56,7 @@ const education = [
     institution: "University of Wollongong",
     degree: "Bachelor of Computer Science",
     specialization: "Cyber Security",
-    date: "Oct 2022 - Sep 2025",
+    date: "2022 - 2026",
     logo: uowLogo,
     website: "www.uow.edu.au",
   },
@@ -72,7 +64,7 @@ const education = [
     institution: "Singapore Institute of Management",
     degree: "Diploma of Education",
     specialization: "Information Technology",
-    date: "Oct 2021 - Sep 2022",
+    date: "2021 - 2022",
     logo: simLogo,
     website: "www.sim.edu.sg",
   },
