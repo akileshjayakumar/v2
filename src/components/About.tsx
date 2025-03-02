@@ -2,7 +2,6 @@ import { motion } from "framer-motion";
 import { FaGithub, FaLinkedin } from "react-icons/fa";
 import { RiTwitterXLine } from "react-icons/ri";
 import { PiMicrosoftOutlookLogoDuotone } from "react-icons/pi";
-import { GrDocumentPdf } from "react-icons/gr";
 
 // Define the SocialLink component
 interface SocialLinkProps {
@@ -73,14 +72,6 @@ export default function About() {
               icon={PiMicrosoftOutlookLogoDuotone}
               className="hover:scale-110 transition-transform"
             />
-            <SocialLink
-              href="/pdf/AkileshJayakumar_Resume.pdf"
-              icon={GrDocumentPdf}
-              className="text-[#ffffff] flex items-center"
-              download="AkileshJayakumar_Resume.pdf"
-            >
-              <span className="ml-6">Resume</span>
-            </SocialLink>
           </div>
         </motion.div>
       </div>

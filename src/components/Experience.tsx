@@ -43,7 +43,7 @@ const experiences = [
   {
     company: "Central Provident Fund Board",
     position: "AI Engineer Intern",
-    date: "Nov 2024 - Apr 2024",
+    date: "Nov 2023 - Apr 2024",
     logo: cpfLogo,
     website: "www.cpf.gov.sg",
     description: [],
