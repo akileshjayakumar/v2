@@ -13,7 +13,6 @@ import { IoLogoVercel } from "react-icons/io5";
 import htxLogo from "@/components/logos/htx.png";
 import cpfLogo from "@/components/logos/cpf.png";
 import uowLogo from "@/components/logos/uow.png";
-import simLogo from "@/components/logos/sim.png";
 
 const techIcons = {
   NvidiaNIM: BsNvidia,
