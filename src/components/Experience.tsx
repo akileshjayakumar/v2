@@ -59,15 +59,7 @@ const education = [
     date: "2022 - 2026",
     logo: uowLogo,
     website: "www.uow.edu.au",
-  },
-  {
-    institution: "Singapore Institute of Management",
-    degree: "Diploma of Education",
-    specialization: "Information Technology",
-    date: "2021 - 2022",
-    logo: simLogo,
-    website: "www.sim.edu.sg",
-  },
+  }
 ];
 
 const projects = [
