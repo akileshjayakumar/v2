@@ -1,10 +1,10 @@
 # Portfolio Website V2
 
-Here is the link to the live site: [https://akileshjayakumar.com](https://akileshjayakumar.com)
+Here is the link to the live site: [https://v2-akilesh.vercel.app/](https://v2-akilesh.vercel.app/)
 
 ## Tech Stack
 
-- [Vercel](https://streamlit.io/): For deployment
+- [Vercel](https://vercel.com/): For deployment
 - [Next.js](https://nextjs.org/): For frontend
 
 ## Contact Information
