@@ -46,11 +46,6 @@ npm run lint
 
 Pull requests are welcome for improvements to UI, content, and accessibility.
 
-## Contact
-- Email: `jayakuma006@mymail.sim.edu.sg`
-- LinkedIn: [https://www.linkedin.com/in/akileshjayakumar/](https://www.linkedin.com/in/akileshjayakumar/)
-- GitHub: [https://github.com/akileshjayakumar](https://github.com/akileshjayakumar)
-
 ## License
-MIT
+Licensed under the `MIT` license. See [LICENSE](./LICENSE) for full text.
 
