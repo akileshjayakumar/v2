@@ -1,17 +1,56 @@
 # Portfolio Website V2
 
-Here is the link to the live site: [https://v2-akilesh-projects.vercel.app/](https://v2-akilesh-projects.vercel.app/)
+A personal portfolio built with Next.js, TypeScript, and Tailwind CSS to showcase experience, projects, and skills with an interactive single-page UI.
 
-## Tech Stack
+Live site: [https://v2-akilesh-projects.vercel.app/](https://v2-akilesh-projects.vercel.app/)
 
-- [Vercel](https://vercel.com/): For deployment
-- [Next.js](https://nextjs.org/): For frontend
+## Quick Start
 
-## Contact Information
+### Prerequisites
+- Node.js 18+
+- npm
 
-For more information, please reach out to me at:
+### Install
+```bash
+npm install
+```
 
-- **Email**: jayakuma006@mymail.sim.edu.sg
-- **LinkedIn**: [Akilesh Jayakumar on LinkedIn](https://www.linkedin.com/in/akileshjayakumar/)
-- **GitHub**: [Akilesh Jayakumar on GitHub](https://github.com/akileshjayakumar)
+### Run
+```bash
+npm run dev
+```
+
+Open `http://localhost:3000`.
+
+## Features
+- Typing hero introduction with animated cursor and rotating text
+- Section-based layout for About, Skills, Experience, and Projects
+- Responsive retro-inspired UI with Framer Motion transitions
+- External profile and project links for quick navigation
+
+## Usage
+```bash
+npm run build
+npm run start
+```
+
+Use the sticky top navigation (`ABOUT`, `SKILLS`, `EXPERIENCE`) to jump between sections.
+
+## Configuration
+- No required environment variables for local development.
+
+## Contributing
+```bash
+npm run lint
+```
+
+Pull requests are welcome for improvements to UI, content, and accessibility.
+
+## Contact
+- Email: `jayakuma006@mymail.sim.edu.sg`
+- LinkedIn: [https://www.linkedin.com/in/akileshjayakumar/](https://www.linkedin.com/in/akileshjayakumar/)
+- GitHub: [https://github.com/akileshjayakumar](https://github.com/akileshjayakumar)
+
+## License
+MIT
 
